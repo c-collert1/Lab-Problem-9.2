@@ -98,7 +98,26 @@ bool hasAdjacentDuplicates(int values[6]) {
 	}
 }
 bool hasDuplicates(int values[6]) {
-	
+	int firstNumber = 0;
+	int secondNumber = 1;
+	int counter = 0;
+	for (int i = 0; i < 6; i++) {
+		for (int i = 0; i < 6; i++) {
+			if (values[firstNumber] == values[secondNumber]) {
+				counter++;
+
+			}
+			secondNumber++;
+		}
+		secondNumber = 1;
+		firstNumber++;
+	}
+	if (counter > 0) {
+		return true;
+	}
+	else {
+		return false;
+	}
 }
 
 
