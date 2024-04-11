@@ -118,6 +118,6 @@ bool hasDuplicates(int values[6]) {
 	else {
 		return false;
 	}
-}
+} 
 
 
